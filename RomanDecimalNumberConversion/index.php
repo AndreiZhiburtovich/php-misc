@@ -1,19 +1,26 @@
 <?php
 
 require "RomanDecimalNumberConversion.php";
-require "ShowRomanDecimalNumberConversion.php";
+require "RomanDecimalNumberConversionTest.php";
 
 header("Content-type: text/plain");
 
-// TESTS
-
-ShowRomanDecimalNumberConversion::showConvertRomanToDecimal("LXIII");
-ShowRomanDecimalNumberConversion::showConvertRomanToDecimal("CM");
-ShowRomanDecimalNumberConversion::showConvertRomanToDecimal("LIV");
-ShowRomanDecimalNumberConversion::showConvertRomanToDecimal("xl");
-ShowRomanDecimalNumberConversion::showConvertRomanToDecimal("vii");
+RomanDecimalNumberConversionTest::convertRomanToDecimalTest("LXIII");
+RomanDecimalNumberConversionTest::convertRomanToDecimalTest("CM");
+RomanDecimalNumberConversionTest::convertRomanToDecimalTest("LIV");
+RomanDecimalNumberConversionTest::convertRomanToDecimalTest("xl");
+RomanDecimalNumberConversionTest::convertRomanToDecimalTest("vii");
 
 echo "---------------" . PHP_EOL;
 
 $romans = ["VI", "LXXX", "XL", "MI", "ix", "ccc", "cm"];
-ShowRomanDecimalNumberConversion::showConvertRomansToDecimals($romans);
+RomanDecimalNumberConversionTest::convertRomansToDecimalsTest($romans);
+
+echo "---------------" . PHP_EOL;
+
+RomanDecimalNumberConversionTest::convertDecimalToRomanTest(1728);
+
+echo "---------------" . PHP_EOL;
+
+$decimals = [123, 12, 456, 128, 64, 1999, 0, 1, 2222, 3999, 4000];
+RomanDecimalNumberConversionTest::convertDecimalsToRomansTest($decimals);
