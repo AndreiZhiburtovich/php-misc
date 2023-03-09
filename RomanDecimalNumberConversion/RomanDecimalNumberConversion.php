@@ -38,6 +38,7 @@ class RomanDecimalNumberConversion
     /**
      * @param int $number
      * @return string
+     * @throws Exception
      */
     public static function convertDecimalToRoman(int $number): string
     {
