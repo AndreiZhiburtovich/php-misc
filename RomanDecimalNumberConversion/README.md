@@ -1,8 +1,6 @@
-A simple way to convert numbers from roman to decimal and vice versa.
-
-------------------------------
-
-class RomanDecimalNumberConversion
+<pre>
+<h3>A simple way to convert numbers from roman to decimal and vice versa.</h3>
+<b>class RomanDecimalNumberConversion</b>
 
 /**
 * @param string $roman
@@ -17,9 +15,8 @@ public static function convertRomanToDecimal(string $roman): int
 */ 
 public static function convertDecimalToRoman(int $number): string
 
-------------------------------
 
-TEST RESULTS:
+<b>TEST RESULTS:</b>
 
 LXIII : 63
 CM : 900
@@ -34,3 +31,4 @@ vii : 7
 1 : I
 2222 : MMCCXXII
 3999 : MMMCMXCIX
+</pre>
