@@ -1,0 +1,1 @@
+Examples of some common design patterns in OOP (written in PHP).
